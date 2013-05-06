@@ -1,0 +1,1311 @@
+/*低端机，320*455*/
+@media screen and (width: 320px) and (height: 455px){
+    .main,.first,.mainbuy,.mainsell,.mainhelp{
+        height: 455px;
+        width: 320px;
+        overflow: hidden;
+    }
+    .mask{
+        height: 455px;
+    }
+    .calcbuy,.calcsell,.resultcon,.helpcon,.firstcon{
+        width: 320px;
+        height: 408px;
+   }
+   .buyForm,.firstm{
+        width: 320px;
+        min-height: 396px; 
+        padding-top:  12px;  
+   }
+   .sellForm{
+        width: 320px;
+        min-height: 600px;
+   }
+   .errortip{
+        top: 180px;
+   }
+    .resultm,.helpm{
+        min-height: 396px;
+        background: none;
+    }
+    .buyresult,.sellresult{
+        width: 320px;
+        height: 455px;
+        top: 0;
+    }
+    .icon,.mask,.header,.calcbuy,.calcsell,.pbtn,.resultcon{
+        width: 320px;
+    }
+    .mainbuy,.mainsell,.mainhelp,.buyresult,.sellresult{
+        left: 320px;
+    }
+    .errortip{
+        position: absolute;
+        width: 280px;
+    }
+    .errortip input,.errortip input:visited{
+        width: 260px;
+    }
+    .header .calcTit{
+        width: 220px;
+    }
+    .conshow{
+        -webkit-transform: translateX(-320px);
+    }
+/*    .conshow1{
+        -webkit-transform: translateX(-320px) scale(0.95,0.95);
+    }
+    .conshow2{
+        -webkit-transform: translateX(-320px) scale(1,1);
+    }*/
+    .inputline,.first .firstnav .inputline,.inputline,.inputlinecon,.getprice,.contract,.changetype{
+        width: 298px;
+    }
+    .firstnav,.resultarea,.calcline,.blconner,.tabchooseone,.inputlinetype{
+        width: 300px;
+    }
+    .helpone{
+        width:280px;
+    }
+    .tabchooseone-label{
+        width: 299px;    
+    }
+    .tabchooseone{
+        position: absolute;
+        width: 300px;
+    }
+    .caltype{
+        width: 300px;
+    }
+    .tabbkone{
+        width: 149px;
+    }
+    .tablone,.tabrone{
+        position: absolute;
+        width: 149px;
+    }    
+    .tabrone{
+        left: 149px;
+    }
+    .tabchoose-checkbox:checked + .tabchooseone-label .tabbkone {
+        -webkit-transform: translateX(148px);
+    }
+}
+/*小米1，480*854*/
+@media screen and (device-width: 480px) and (device-height: 854px){
+    .main,.first,.mainbuy,.mainsell,.mainhelp{
+        height: 544px;
+        width: 320px;
+        overflow: hidden;
+    }
+    .mask{
+        height: 544px;
+    }
+    .calcbuy,.calcsell,.resultcon,.helpcon,.firstcon{
+        width: 320px;
+        height: 497px;
+   }
+   .buyForm,.firstm{
+        width: 320px;
+        min-height: 485px; 
+        padding-top:  12px;  
+   }
+   .sellForm{
+        width:320px;
+        min-height: 497px;
+   }
+   .errortip{
+        top: 180px;
+   }
+   .resultm,.helpm{
+        min-height: 497px;
+        background: none;
+    }
+   .buyresult,.sellresult{
+        width: 320px;
+        height: 544px;
+        top: 0;
+    }
+    .icon,.mask,.header,.calcbuy,.calcsell,.pbtn,.resultcon{
+        width: 320px;
+    }
+    .mainbuy,.mainsell,.mainhelp,.buyresult,.sellresult{
+        left: 320px;
+    }
+    .errortip{
+        position: absolute;
+        width: 280px;
+    }
+    .errortip input,.errortip input:visited{
+        width: 260px;
+    }
+    .header .calcTit{
+        width: 220px;
+    }
+    .conshow{
+        -webkit-transform: translateX(-320px);
+    }
+    .conshow1{
+        -webkit-transform: translateX(-320px) scale(0.95,0.95);
+    }
+    .conshow2{
+        -webkit-transform: translateX(-320px) scale(1,1);
+    }
+    .inputline,.first .firstnav .inputline,.inputline,.inputlinecon,.getprice,.contract,.changetype{
+        width: 298px;
+    }
+    .firstnav,.resultarea,.calcline,.blconner,.tabchooseone,.inputlinetype{
+        width: 300px;
+    }
+    .helpone{
+        width:280px;
+    }
+    .tabchooseone-label{
+        width: 299px;    
+    }
+    .tabchooseone{
+        position: absolute;
+        width: 300px;
+    }
+    .caltype{
+        width: 300px;
+    }
+    .tabbkone{
+        width: 149px;
+    }
+    .tablone,.tabrone{
+        position: absolute;
+        width: 149px;
+    }    
+    .tabrone{
+        left: 149px;
+    }
+    .tabchoose-checkbox:checked + .tabchooseone-label .tabbkone {
+        -webkit-transform: translateX(148px);
+    }
+}
+/*800*1280 note 2*/
+@media screen and (device-width: 800px) and (device-height: 1280px){
+    .main,.first,.mainbuy,.mainsell,.mainhelp{
+        height: 615px;
+        width: 400px;
+        overflow: hidden;
+    }
+    .mask{
+        height: 615px;
+    }
+    .calcbuy,.calcsell,.resultcon,.helpcon,.firstcon{
+        width: 400px;
+        height: 615px;
+   }
+   .buyForm,.firstm{
+        width: 400px;
+        min-height: 555px; 
+        padding-top:  12px;  
+   }
+   .sellForm{
+        width:400px;
+        min-height: 597px;
+   }
+   .errortip{
+        top: 180px;
+   }
+   .resultm,.helpm{
+        min-height: 597px;
+        background: none;
+    }
+   .buyresult,.sellresult{
+        width: 400px;
+        height: 615px;
+        top: 0;
+    }
+    .icon,.mask,.header,.calcbuy,.calcsell,.pbtn,.resultcon{
+        width: 400px;
+    }
+    .mainbuy,.mainsell,.mainhelp,.buyresult,.sellresult{
+        left: 400px;
+    }
+    .errortip{
+        position: absolute;
+        width: 380px;
+    }
+    .errortip input,.errortip input:visited{
+        width: 340px;
+    }
+    .header .calcTit{
+        width: 300px;
+    }
+    .conshow{
+        -webkit-transform: translateX(-400px);
+    }
+    .conshow1{
+        -webkit-transform: translateX(-400px) scale(0.95,0.95);
+    }
+    .conshow2{
+        -webkit-transform: translateX(-400px) scale(1,1);
+    }
+    .inputline,.first .firstnav .inputline,.inputline,.inputlinecon,.getprice,.contract,.changetype{
+        width: 380px;
+    }
+    .firstnav,.resultarea,.calcline,.blconner,.tabchooseone,.inputlinetype{
+        width: 380px;
+    }
+    .helpone{
+        width:360px;
+    }
+    .tabchooseone-label{
+        width: 379px;    
+    }
+    .tabchooseone{
+        position: absolute;
+        width: 379px;
+    }
+    .caltype{
+        width: 379px;
+    }
+    .tabbkone{
+        width: 189px;
+    }
+    .tablone,.tabrone{
+        position: absolute;
+        width: 189px;
+    }    
+    .tabrone{
+        left: 189px;
+    }
+    .tabchoose-checkbox:checked + .tabchooseone-label .tabbkone {
+        -webkit-transform: translateX(189px);
+    }
+}
+
+/*540*960 */
+@media screen and (device-width: 540px) and (device-height: 960px){
+    .main,.first,.mainbuy,.mainsell,.mainhelp{
+        height: 615px;
+        width: 360px;
+        overflow: hidden;
+    }
+    .mask{
+        height: 615px;
+    }
+    .calcbuy,.calcsell,.resultcon,.helpcon,.firstcon{
+        width: 360px;
+        height: 573px;
+   }
+   .buyForm,.firstm{
+        width: 360px;
+        min-height: 561px; 
+        padding-top:  12px;  
+   }
+   .sellForm{
+        width: 360px;
+        min-height: 600px;
+   }
+   .errortip{
+        top: 180px;
+   }
+   .resultm,.helpm{
+        min-height: 561px;
+        background: none;
+    }
+   .buyresult,.sellresult{
+        width: 360px;
+        height: 615px;
+        top: 0;
+    }
+    .icon,.mask,.header,.calcbuy,.calcsell,.pbtn,.resultcon{
+        width: 360px;
+    }
+    .mainbuy,.mainsell,.mainhelp,.buyresult,.sellresult{
+        left: 360px;
+    }
+    .errortip{
+        position: absolute;
+        width: 320px;
+    }
+    .errortip input,.errortip input:visited{
+        width: 300px;
+    }
+    .header .calcTit{
+        width: 260px;
+    }
+    .conshow{
+        -webkit-transform: translateX(-360px);
+    }
+    .conshow1{
+        -webkit-transform: translateX(-360px) scale(0.95,0.95);
+    }
+    .conshow2{
+        -webkit-transform: translateX(-360px) scale(1,1);
+    }
+    .inputline,.first .firstnav .inputline,.inputline,.inputlinecon,.getprice,.contract,.changetype{
+        width: 338px;
+    }
+    .firstnav,.resultarea,.calcline,.blconner,.tabchooseone,.inputlinetype{
+        width: 340px;
+    }
+    .helpone{
+        width:320px;
+    }
+    .tabchooseone-label{
+        width: 339px;    
+    }
+    .tabchooseone{
+        position: absolute;
+        width: 340px;
+    }
+    .caltype{
+        width: 340px;
+    }
+    .tabbkone{
+        width: 169px;
+    }
+    .tablone,.tabrone{
+        position: absolute;
+        width: 169px;
+    }    
+    .tabrone{
+        left: 169px;
+    }
+    .tabchoose-checkbox:checked + .tabchooseone-label .tabbkone {
+        -webkit-transform: translateX(168px);
+    }
+}
+
+/*480*800 */
+@media screen and (device-width: 400px) and (device-height: 800px){
+    .main,.first,.mainbuy,.mainsell,.mainhelp{
+        height: 615px;
+        width: 360px;
+        overflow: hidden;
+    }
+    .mask{
+        height: 615px;
+    }
+    .calcbuy,.calcsell,.resultcon,.helpcon,.firstcon{
+        width: 360px;
+        height: 573px;
+   }
+   .buyForm,.firstm{
+        width: 360px;
+        min-height: 561px; 
+        padding-top:  12px;  
+   }
+   .sellForm{
+        width: 360px;
+        min-height: 600px;
+   }
+   .errortip{
+        top: 180px;
+   }
+   .resultm,.helpm{
+        min-height: 561px;
+        background: none;
+    }
+   .buyresult,.sellresult{
+        width: 360px;
+        height: 615px;
+        top: 0;
+    }
+    .icon,.mask,.header,.calcbuy,.calcsell,.pbtn,.resultcon{
+        width: 360px;
+    }
+    .mainbuy,.mainsell,.mainhelp,.buyresult,.sellresult{
+        left: 360px;
+    }
+    .errortip{
+        position: absolute;
+        width: 320px;
+    }
+    .errortip input,.errortip input:visited{
+        width: 300px;
+    }
+    .header .calcTit{
+        width: 230px;
+    }
+    .conshow{
+        -webkit-transform: translateX(-360px);
+    }
+    .conshow1{
+        -webkit-transform: translateX(-360px) scale(0.95,0.95);
+    }
+    .conshow2{
+        -webkit-transform: translateX(-360px) scale(1,1);
+    }
+    .inputline,.first .firstnav .inputline,.inputline,.inputlinecon,.getprice,.contract,.changetype{
+        width: 338px;
+    }
+    .firstnav,.resultarea,.calcline,.blconner,.tabchooseone,.inputlinetype{
+        width: 340px;
+    }
+    .helpone{
+        width:320px;
+    }
+    .tabchooseone-label{
+        width: 339px;    
+    }
+    .tabchooseone{
+        position: absolute;
+        width: 340px;
+    }
+    .caltype{
+        width: 340px;
+    }
+    .tabbkone{
+        width: 169px;
+    }
+    .tablone,.tabrone{
+        position: absolute;
+        width: 169px;
+    }    
+    .tabrone{
+        left: 169px;
+    }
+    .tabchoose-checkbox:checked + .tabchooseone-label .tabbkone {
+        -webkit-transform: translateX(168px);
+    }
+}
+
+.main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+}
+.mainbuy,.mainsell,.mainhelp,.buyresult,.sellresult{
+    background: #354b62;
+    position: absolute;
+    -webkit-border-radius:3px;
+}
+.mainbuy{
+    z-index: 10;
+}
+.mainsell{
+    z-index: 20;
+}
+.buyresult{
+    z-index: 60;
+}
+.sellresult{
+    z-index: 70;
+}
+.mainhelp{
+    z-index: 105;
+}
+.icon{
+    position: absolute;
+    bottom: 20px;
+    height: 90px;
+    z-index: 6;
+}
+.icon i{
+    display: block;
+    margin: auto;
+    width: 90px;
+    height: 75px;
+    background-size: 100%;
+    background-image: url(../img/icon.png); 
+}
+.icon p{
+    text-align: center;
+    line-height: 20px;
+    color: #233343;
+}
+.mask{
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 200;
+}
+
+.maskhide{
+    display: block;
+    opacity: 0;
+    -webkit-transition: opacity;
+    -webkit-transition-duration: 0.1s;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transition-timing-function: ease-in-out ;
+}
+.maskshow{
+    display: block;
+    opacity: 1;
+    -webkit-transition: opacity;
+    -webkit-transition-duration: 0.1s;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transition-timing-function: ease-in-out ;
+}
+
+.errortip{
+    display: none;
+    position: absolute;
+    z-index: 201;
+    background: rgba(255,255,255,1);
+    -webkit-border-radius: 4px;
+    margin: auto 20px;
+    padding-bottom: 5px;
+    background-image:
+        -webkit-gradient(linear,left top,left bottom,color-stop(0,#4a647e),color-stop(1,#405b76));
+    border: 1px solid #021120;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.25) inset,0 2px 4px rgba(0,0,0,0.5);
+}
+.errortip p{
+    margin: 15px auto; 
+    padding: 0 10px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+}
+.errortiphide,.errortipshow{
+    display: block;
+}
+.errortip input,.errortip input:visited{
+    display: block;
+    bottom: 7px;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px 10px 0 10px;
+    text-align: center;
+    background: #e7eaec;
+    border-radius: 4px;
+    line-height: 30px;
+    font-size: 14px;
+    outline: none;
+    color: #fff;
+    background-image:
+        -webkit-gradient(linear,left top,left bottom,color-stop(0,#5eacd4),color-stop(1,#4590c5));
+    border: 1px solid #021120;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.25) inset,0 1px 0px rgba(255,255,255,0.25);
+    -webkit-appearance: none;
+    -webkit-user-select: text;
+}
+.errortip input:hover{
+    background-image:
+        -webkit-gradient(linear,left top,left bottom,color-stop(0,#529ecc),color-stop(1,#368ec4));
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.25) inset,;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4) inset,0 1px 0px rgba(255,255,255,0.25);
+    color: #bdc6cf;    
+}
+/*.mainshow{
+    -webkit-transform: scale(1, 1);
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transition-duration : 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+.mainhide{
+    -webkit-transform: scale(0.95, 0.95);
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transition-duration : 0.3s;
+    -webkit-transition-timing-function: ease;
+}*/
+
+.first{
+    position: absolute;
+    z-ndex: 2;
+    -webkit-border-radius:3px;
+    background: #354b62;
+}
+.first .header .back{
+    visibility: hidden;
+}
+.firstnav{
+    margin: auto 10px;
+    border-radius: 8px;
+    box-shadow: 0px -1px 2px #2b3d50,0px 2px 4px #2b3d50;
+}
+
+.first .firstnav .inputline{
+    color: #4d636f;
+    background-image:
+        -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(1,#f7f7f7));    
+    border-left: 1px solid #8a95a1;
+    border-right: 1px solid #8a95a1;
+    border-bottom: 1px solid #dfdfdf;
+}  
+
+.first .firstnav .inputline:first-child{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;    
+    border-top: 1px solid #8a95a1;
+    border-bottom: 1px solid #dfdfdf;
+}
+.first .firstnav .inputline:last-child{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom: 1px solid #8a95a1;
+}
+
+.firstnavhelp{
+    margin-top: 12px;
+}
+
+.first .firstnavhelp .inputline:first-child{
+    border: 1px solid #8a95a1;
+}
+
+.firstcon{
+     -webkit-overflow-scrolling: touch;  
+     position: absolute;
+     top: 47px; 
+     z-index: 8;
+}
+.first .firstnav .inputlinehover{
+    background-image:
+        -webkit-gradient(linear,left top,left bottom,color-stop(0,#5eacd3),color-stop(1,#4590c5));    
+    color: #fff;
+    }
+
+.first .firstnav .inputline:hover .firstnav .inputline .navl span{
+    color: #000;
+}
+
+.first .firstnav .inputlinehover  .navr i{
+    background-image:url(../img/arrow_white.png); 
+}
+    
+
+.firstnav .navl span{
+    display: block;
+    width: 200px;
+    height: 45px;
+    position: relative;
+    left: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+.navl{
+    display: block;
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
+
+}
+.navr{
+    width: 35px;
+    height: 45px;
+    height: 45px;
+    line-height: 45px;    
+}
+.navr i{
+    display: block;
+    width: 35px;
+    height: 44px;
+    background-size: 100%;
+    background-image:url(../img/arrow_grey.png); 
+}
+.helpcon{
+    position: absolute;
+    top: 47px;
+    z-index: 200;
+    background: #354b62;
+}
+.helpall{
+    margin-top: 12px;
+}
+.helpall p{
+    line-height: 20px;
+}
+.helptips{
+    width: 300px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 18px;
+    margin: 8px 10px;
+}
+.helpone{
+    border-radius: 8px;
+    background-image:
+        -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(1,#dcdcdc));    
+/*    width: 280px;*/
+    padding: 8px 10px;
+    margin: auto 10px 10px 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25;)
+}
+p.helpques{
+    text-indent: 0;
+    line-height: 30px;
+    border-bottom: 1px dotted rgba(0,0,0,0.6);   
+    font-size: 16px;
+    color: #4d636f;
+}
+p.helpans{
+    margin-top: 8px;
+    color: #5d656e;
+    line-height: 25px;
+}
+/*头部部分固定*/
+.header{
+    position: absolute;
+    top: 0px;
+/*    z-index: 100;*/
+    color: #fff; 
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    background-image:
+        -webkit-gradient(linear,left top,left bottom,color-stop(0,#738ea7),color-stop(1,#4f708f));
+    line-height: 45px;
+    height: 45px;
+    border-bottom: 1px solid #1d2b37;
+}
+.mainhelp .header{
+    z-index: 110;
+}
+.header .back,.header .back:visited{
+    width: 50px;
+    height: 35px;
+    margin-top: 4px;
+    background-size: 100%;
+}
+.header .back a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-image:url(../img/arrow.png);
+    background-size: 200%;
+    background-position: 35px 0;}
+.header .back a:hover{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-image:url(../img/arrow.png);
+    background-size: 200%;
+    background-position: 0 0;}
+.header .calcTit{
+/*    width: 250px;*/
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0px -1px rgba(0,0,0,0.5);
+}
+
+/*买房版*/
+.calcbuy,.calcsell{
+    position: relative;
+/*    width: 320px;*/
+    left: 0;
+    top: 45px;
+    -webkit-overflow-scrolling: touch;
+}
+.sellForm{
+    position: absolute;
+    z-index: 45;
+}
+.calcwrap{
+    position: absolute;
+    top: 61px;
+    z-index: 47;
+}
+
+.calcline{
+    position: relative;
+    overflow: hidden;
+    margin: 0px 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 0px -1px 2px #2b3d50,0px 2px 4px #2b3d50;
+}
+
+.blconner{
+    position: absolute;
+    z-index: 19;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 8px;
+    background-size: 100%;
+    background: url(../img/conner.png);
+    border: none;
+}
+.borderbtrd{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.inputline{
+    border-left: 1px solid #8a95a1;
+    border-right: 1px solid #8a95a1;
+    background: #fff;
+    background:url(../img/linebk.png) 100% 98%; 
+}
+.buyfirstline,.sellfirstline{
+    border-top: 1px solid #8a95a1;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.typeup{
+    -webkit-transform: translateY(-50px);
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: linear;
+}
+.typedown{
+    -webkit-transform: translateY(50px);
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: linear;
+}
+
+.inputlinecon{
+    height: 45px;    
+}
+.inputline,.inputlinecon{
+    position: relative;
+    height: 45px;
+    line-height: 44px;
+    overflow: hidden;}
+
+.inputlinel{
+    text-align: left;
+    line-height: 44px;
+    padding-left: 10px;
+    color: #4d636f;}
+.inputliner{
+    position: relative;
+    height: 44px;
+    line-height: 44px;
+    color: #036da6;
+}
+.inputliner .inputbk{
+    position: absolute;
+    z-index: 32;
+    right: 60px;
+    width: 120px;
+    height: 28px;
+    background: #fff;}
+.inputliner select{
+    height: 30px;
+    font-size: 14px;
+}
+.inputlinenone{
+    display: none;
+}
+.inputlineblock{
+    display: block;
+    height: 0;
+}
+.inputlinehide{
+    display: block;
+    height: 0;
+    -webkit-transition:height 0.2s ease-out 0.2s;
+}
+.inputlineshow{
+    display: block;
+    height: 45px;
+    overflow: hidden;
+    -webkit-transition:height 0.2s ease-in;
+}
+.inputlinecontop{
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    -webkit-transition:opacity 0.2s ease-out;
+}
+
+.inputlineconup{
+    opacity: 1;
+    -webkit-transition:opacity 0.2s ease-in 0.1s;
+}
+.commissionline{ height: 45px;}
+.incomeline{ height: 45px;}
+.inputarea input[type="number"],select{
+    display: block;
+    position: absolute;
+    text-align: left;
+    background: #e7eaec;
+    border-radius: 3px;
+    right: 10px;
+    height: 30px;
+    line-height: 24px;
+    z-index: 31;
+    margin-top: 7px;
+    font-size: 20px;
+    outline: none;
+    color: #036da6;
+    border: none;
+    box-shadow: 0 1px 0px rgba(255,255,255,0.2),0 1px 0px rgba(0,0,0,0.1) inset,0px 1px 2px rgba(0,0,0,0.5) inset;
+    -webkit-appearance: none;
+    -webkit-user-select: text;
+}
+.inputarea input[type="number"]{
+    width: 140px;
+}
+select{
+    width: 140px;
+    padding-left: 110px;
+    background-size: 139px 29px;
+}
+
+::-webkit-input-placeholder{
+    color: #036da6;
+}
+.row:active:hover{
+    background-color: #385068;
+}
+
+.inputline span{
+    display: block;
+    position: absolute;
+    z-index: 51;
+    font-size: 14px;
+    width: 30px;
+    right: 15px;
+    line-height: 48px;
+}
+.familynum,.arearegion{
+    position: relative;
+}
+.getprice,.contract{
+    width: 100%;
+}
+.contractup{
+    -webkit-transform: translateY(-45px);
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease-in;
+}
+.contractdown{
+    -webkit-transform: translateY(0px);
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease-in;
+}
+.changetype{
+    height: 45px;
+    overflow: hidden;
+}
+.tabchoose{
+    float: right;
+    z-index: 31;
+}
+/*开关按钮css片段*/
+.tabchoose-checkbox{
+    display: none;
+    -webkit-appearance: none !important;}
+.tabchoose-label{
+    display: block;
+    text-align: right;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    box-shadow: 0 1px 0px rgba(255,255,255,0.2),0 1px 0px rgba(0,0,0,0.1) inset,0px 1px 2px rgba(0,0,0,0.5) inset;
+    width: 140px;
+    position: absolute;
+    right: 10px;
+    z-index: 31;
+    background: #e7eaec;
+    margin-top: 7px;
+    border-radius: 3px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.tabbk{
+    position: absolute;
+    left: 0;
+    top: 0px;
+    -webkit-transform: translateX(0px);
+    -webkit-transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease-in-out;
+    border-radius:3px; 
+    height: 28px;
+    width: 68px;
+    z-index: 32;
+    background-image:
+        -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(1,#f0f0f0));
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.2) inset;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+.tabl,.tabr{
+    position: absolute;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    background: transparent;
+    top: 0;
+    height: 30px;
+    line-height: 30px;
+    width: 70px;
+    z-index: 33;
+}
+.tabr{
+    color: #a6b7c9;
+    left: 70px;
+}
+.tabl{
+    left: 0px;
+}
+.tabl{
+    color: #036da6;    
+}
+.tabchoose-checkbox:checked + .tabchoose-label .tabbk {
+    -webkit-transform: translateX(70px);
+    -webkit-transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease-out;
+}
+
+.tabchoose-checkbox:checked + .tabchoose-label .tabl{
+    color: #a6b7c9;
+    -webkit-transition:color 0.1s ease-out 0.1s;
+}
+
+.tabchoose-checkbox:checked + .tabchoose-label .tabr {
+    color: #036da6;
+    -webkit-transition:color 0.1s ease-out 0.1s;
+}
+
+.tabchooseone{
+    position: absolute;
+    margin:12px 10px 0 10px;
+    height: 40px;
+    z-index: 35;
+    display: block;
+}
+.caltype{
+    height: 40px;
+}
+.tabchooseone-label{
+    display: block;
+    text-align: right;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    box-shadow: 0 1px 0px rgba(255,255,255,0.2),0 1px 0px rgba(0,0,0,0.1) inset,0px 1px 2px rgba(0,0,0,0.5) inset;
+}
+
+.tabchooseone-label{
+    background: #354b62;
+    border-radius: 4px;
+    height: 38px;
+    line-height: 38px;
+    z-index: 35;
+}
+.tabbkone{
+    position: absolute;
+    left: 0;
+    top: 0px;
+    -webkit-transform: translateX(0px);
+    -webkit-transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease-in-out;
+}
+.tabbkone{
+    border-radius:4px; 
+    height: 36px;
+    z-index: 36;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8),0px -1px 1px rgba(0, 0, 0, 0.8);
+    background: #529ecc;
+    border: 1px solid #77bfde;
+}
+.tablone,.tabrone{
+    position: absolute;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    background: transparent;
+    top: 0;
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px;
+    z-index: 37;
+}
+.tabrone{
+    color: #a6b7c9;
+}
+.tablone{
+    left: 0px;
+    color: #fff;    
+    width: 49%;
+}
+.tabchoose-checkbox:checked + .tabchooseone-label .tabbkone {
+/*        -webkit-transform: translateX(168px);*/
+    -webkit-transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease-out;
+}
+
+.tabchoose-checkbox:checked + .tabchooseone-label .tablone {
+    color: #a6b7c9;
+    -webkit-transition:color 0.1s ease-out 0.1s;
+}
+
+.tabchoose-checkbox:checked + .tabchooseone-label .tabrone{
+    color: #fff;
+    -webkit-transition:color 0.1s ease-out 0.1s;    
+}
+
+.calctype{
+    margin-top: 9px;
+    margin-right: 10px;
+    height: 30px;
+    display: block;
+    text-align: right;
+    background: #e7eaec;
+    z-index: 70;
+    font-size: 20px;
+    outline: none;
+    color: #fff;
+    border: none;
+    box-shadow: 0 1px 0px rgba(255,255,255,0.2),0 1px 0px rgba(0,0,0,0.1) inset,0px 1px 2px rgba(0,0,0,0.5) inset;    
+}
+.calctypew1{
+    width: 140px;    
+}
+.calctypew2{
+    width: 70px;    
+}
+/*按利润全额计算税费部分*/
+.calctype1,.calctype2{
+    display: none;
+}
+.calctypel, .calctyper{
+    width: 70px;
+    height: 30px;
+    font-size: 14px;
+}
+
+.forcalctype1, .forcalctype2{
+    width: 70px; 
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #a6b7c9;
+    background: transparent;
+}
+.calctype1:checked + .forcalctype1,.calctype2:checked + .forcalctype2{
+    background-image:
+        -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(1,#f0f0f0));
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.2) inset;
+    border: 1px solid rgba(0,0,0,0.3);
+    color: #036da6;
+}
+
+/*按钮部分*/
+.pbtn{
+    margin-top: 10px;
+    padding-bottom: 25px;
+}
+.pbtn input[type="submit"],.pbtn input[type="submit"]:visited{
+    display: block;
+    width: 95%;
+    margin: auto;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-image:
+        -webkit-gradient(linear,left top,left bottom,color-stop(0,#72aed4),color-stop(1,#4b88af));
+    -webkit-box-shadow: 0 1px 0px rgba(255,255,255,0.25) inset,0 1px 0px rgba(255,255,255,0.25);
+    text-shadow: 0px -1px rgba(0,0,0,0.8);
+}
+.pbtn input.ptnhover{
+    background-image:
+        -webkit-gradient(linear,left top,left bottom,color-stop(0,#4a87ad),color-stop(1,#4b88af));
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.25) inset,0 1px 0px rgba(255,255,255,0.25);
+    text-shadow: 0px -1px rgba(0,0,0,0.5);
+    color: #bdc6cf;    
+}
+/*结果显示部分*/
+.buyresult,.sellresult{
+    background: #354b62;
+    -webkit-user-select: text; 
+}
+.resultcon{
+    display: block;
+    position: absolute;
+/*    width: 320px;*/
+    margin-top: 47px;
+    -webkit-overflow-scrolling: touch;    
+}
+.conshow{
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-in;
+}
+.conshow1{
+    -webkit-transition-duration: 0.3s;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transition-timing-function: ease-in-out ;
+}
+.conshow2{
+    -webkit-transition-duration: 0.3s;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transition-timing-function: ease-in-out ;
+}
+.conhide{
+    -webkit-transform: translateX(0px);
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-in-out ;
+}
+.resultarea{
+    position: absolute;
+    background: rgba(255,255,255,0.85);
+    margin: auto 10px;
+    margin-top: 12px;
+    box-shadow: 1px 1px 2px #000;
+    border-radius: 8px;
+    font-size: 16px;
+    padding-bottom: 10px;
+    background-image:
+        -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(1,#dcdcdc));    
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25;)    
+}
+
+.resultp{
+    height: 28px;
+    line-height: 28px;
+    margin: auto 20px;
+    font-size: 16px;
+    }
+.resulttit,.resultdes{
+    color: #5d656e;
+}
+.resultin{
+    top: 35px;
+    display: block;}
+
+.resultprice{
+    margin-right: 5px;
+    color: #333;
+    font-size: 18px;
+    font-family: Helvetica;
+}
+.bussnesstax{
+    margin-top: 8px;
+}
+.lastprice{
+    position: relative;
+    border-bottom: 1px dotted #354b62;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    padding-bottom: 5px;
+}
+.lastprice .resultprice{
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    color: #71bc48;
+    font-size: 30px;
+}
+.unin{
+    text-align: right;
+    line-height: 20px;
+    padding: 3px 24px 0 0;
+    font-size: 10px;
+    color: #666;
+}
+.totaltax{
+     font-weight: bold;
+ }
+.tips{
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+    color: #999;
+    font-size: 14px;
+}
+
+.rangenum{
+    margin-right: 30px;
+}
+/*卖方版*/
+/*卖方版*/
+.inputline .byprofitline span,.inputline .byprofitline input{
+    display: inline-block;
+    float: left;}
