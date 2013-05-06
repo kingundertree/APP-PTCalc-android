@@ -1,5 +1,4 @@
 'use strict';
-
 jsq.service("businessTax", function($rootScope) {
     var self = this;
 

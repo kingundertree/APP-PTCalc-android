@@ -1,5 +1,4 @@
 'use strict';
-
 jsq.service("sellCalculation", function($rootScope, calculator) {
     var self = this;
 
