@@ -1,10 +1,11 @@
 'use strict';
-jsq.service("buyCalculation", function($rootScope) {
-    var self = this;
+// jsq.service("buyCalculation", function($rootScope) {
+//     var self = this;
 
+    function buyCalculation(){};
     // 计算契税
     // 非普通住宅/普通住宅非首套，全额3%比例;普通住宅首套,且面积小于等于90平米，全额1%;普通住宅首套,面积大于90平米，全额1.5%
-    self.deedTaxCal = function(buyParam) {
+    buyCalculation.deedTaxCal = function(buyParam) {
         var deedTaxProportion = 0;
         if (buyParam.buyhouseType) {
             deedTaxProportion = 0.03;
@@ -19,7 +20,7 @@ jsq.service("buyCalculation", function($rootScope) {
     }
 
     // 计算房产税
-    self.buildingTaxCal = function(buyParam) {
+    buyCalculation.buildingTaxCal = function(buyParam) {
         var unitBase = 2.7740;
         var unitPrice = buyParam.contractPrice / buyParam.area;
         var unitCompare = (unitPrice > unitBase) ? true : false;
@@ -52,4 +53,4 @@ jsq.service("buyCalculation", function($rootScope) {
         return 0;
     }
 
-});
+// });

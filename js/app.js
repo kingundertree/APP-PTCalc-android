@@ -1,6 +1,7 @@
 var jsq = angular.module('jsqpage',[]);
 
-function con($scope, calculator, buyCalculation, $http, indeedTax, businessTax, sellCalculation){
+function con($scope, $http){
+
     pushNewPolicy();
     function pushNewPolicy(){
         $http.get("http://app.dooioo.com:8080/app/caleVersion").success(function(data) {
@@ -27,12 +28,8 @@ function con($scope, calculator, buyCalculation, $http, indeedTax, businessTax, 
     document.getElementById("calcsell").scrollTop = 52;
 
     // 点击买房和卖房按钮，切换
-    $$(".buy").tap(function(e){
+    $$(".buy").on("touchstart",function(){
         $$(".mainbuy").removeClass("conhide");
-        // $$(".mainsell").removeClass("conhide");
-        // $$(".mainhelp").removeClass("conhide");
-        // $$(".first").removeClass("mainshow");
-        // $$(".first").addClass("mainhide");
         $$(".mainbuy").addClass("conshow");        
         buyHouse();
     })
@@ -52,21 +49,15 @@ function con($scope, calculator, buyCalculation, $http, indeedTax, businessTax, 
         $$(this).removeClass("ptnhover");
     })
 
-    $$(".sell").tap(function(e){
-        // $$(".mainbuy").removeClass("conhide");
+    $$(".sell").on("touchstart",function(){
         $$(".mainsell").removeClass("conhide");
-        // $$(".mainhelp").removeClass("conhide");
-        // $$(".first").removeClass("mainshow");
-        // $$(".first").addClass("mainhide");
         $$(".mainsell").addClass("conshow");
         sellHouse();
     })
-    $$(".help").tap(function(e){
+    $$(".help").on("touchstart",function(){
         $$(".mainbuy").removeClass("conhide");
         $$(".mainsell").removeClass("conhide");
         $$(".mainhelp").removeClass("conhide");
-        // $$(".first").removeClass("mainshow");
-        // $$(".first").addClass("mainhide");
         $$(".mainhelp").addClass("conshow");
 
         setTimeout(function(){
@@ -76,43 +67,33 @@ function con($scope, calculator, buyCalculation, $http, indeedTax, businessTax, 
     })
 
     //功能页点击返回，动画切换至首页
-    $$(".mainbuy .back").tap(function(e){
+    $$(".mainbuy .back").on("click",function(){
         $$(".mainbuy").removeClass("conshow");     
         $$(".mainbuy").addClass("conhide");        
-        // $$(".first").removeClass("mainhide");
-        // $$(".first").addClass("mainshow");
         buyInit();
     })
 
-    $$(".mainsell .back").tap(function(e){
+    $$(".mainsell .back").on("click",function(){
         $$(".mainsell").removeClass("conshow");     
         $$(".mainsell").addClass("conhide");        
-        // $$(".first").removeClass("mainhide");
-        // $$(".first").addClass("mainshow");
         setTimeout(function(){
             document.getElementById("calcsell").scrollTop = 52;
         },200)
         sellInit();
     })
 
-    $$(".mainhelp .back").tap(function(e){
+    $$(".mainhelp .back").on("click",function(){
         $$(".mainhelp").removeClass("conshow");     
         $$(".mainhelp").addClass("conhide");        
-        // $$(".first").removeClass("mainhide");
-        // $$(".first").addClass("mainshow");
     })
 
-    $$(".buyresult .back").tap(function(e){
+    $$(".buyresult .back").on("click",function(){
         $$(".buyresult").removeClass("conshow");     
         $$(".buyresult").addClass("conhide");                
-        // $$(".mainbuy").removeClass("conshow1");
-        // $$(".mainbuy").addClass("conshow2");
     })
-    $$(".sellresult .back").tap(function(e){
+    $$(".sellresult .back").on("click",function(){
         $$(".sellresult").removeClass("conshow");     
         $$(".sellresult").addClass("conhide");                
-        // $$(".mainsell").removeClass("conshow1");
-        // $$(".mainsell").addClass("conshow2");
     })
 
     // 点击每行可以切换tab，买房
@@ -201,15 +182,8 @@ function con($scope, calculator, buyCalculation, $http, indeedTax, businessTax, 
                 
                 //个人所得税判断为隐藏前，个人所得税展开时，执行隐藏动画
                 if ($$('.row11').hasClass('rowone')) {
-                    $$('.row11').removeClass('inputlinehide');
-                    $$('.row11').addClass('inputlineshow');
-                    $$('.inputlinecon1').removeClass('inputlineconup');
-
-                    //延迟执行行消失效果
-                    setTimeout(function(){
-                        $$('.row11').removeClass('inputlineshow');
-                        $$('.row11').addClass('inputlinehide');
-                    },10);
+                    $$('.row11').removeClass('inputlineshow');
+                    $$('.row11').addClass('inputlinehide');
 
                     $$('.row11').removeClass('rowone');
                 }else{
@@ -220,13 +194,11 @@ function con($scope, calculator, buyCalculation, $http, indeedTax, businessTax, 
                 $scope.profitShow = indeedTax.byProfitCal($scope.filter2) ? true : false;
 
                 if ($scope.totalShow && $scope.profitShow) {
-                    // $$('.ischina').removeClass('borderbtrd');
                     //个人所得税判断为显示，执行显示动画
                     $$('.row11').removeClass('inputlinehide');
                     $$('.row11').addClass('inputlineshow');
                     $$('.row11').addClass('rowone');
 
-                    $$('.inputlinecon1').addClass('inputlineconup');
                 }else {
                     $$('.row11').addClass('inputlinehide');
                 }
@@ -256,13 +228,6 @@ function con($scope, calculator, buyCalculation, $http, indeedTax, businessTax, 
                 $$('.row22').addClass('inputlineshow');
                 $$('.row22').addClass('rowone');
 
-                setTimeout(function(){
-                    $$('.inputlinecon2').addClass('inputlineconup');
-                },10)
-
-                setTimeout(function(){
-                    $$('.inputlinecon3').addClass('inputlineconup');
-                },100)
             });
 
             $$("#calctype2").tap(function(e) {
@@ -271,15 +236,8 @@ function con($scope, calculator, buyCalculation, $http, indeedTax, businessTax, 
 
                 //如果选择全额之前，装修和利息是展开状态
                 if ($$('.row22').hasClass('rowone')) {
-                    $$('.row22').removeClass('inputlinehide');
-                    $$('.row22').addClass('inputlineshow');
-                    $$('.inputlinecon2').removeClass('inputlineconup');
-                    $$('.inputlinecon3').removeClass('inputlineconup');
-
-                    setTimeout(function(){
-                        $$('.row22').removeClass('inputlineshow');
-                        $$('.row22').addClass('inputlinehide');
-                    },10);
+                    $$('.row22').removeClass('inputlineshow');
+                    $$('.row22').addClass('inputlinehide');
 
                     $$('.row22').removeClass('rowone');
                 }else{
@@ -296,25 +254,10 @@ function con($scope, calculator, buyCalculation, $http, indeedTax, businessTax, 
                 $$('.row22').addClass('inputlineshow');
                 $$('.row22').addClass('rowone');
 
-                setTimeout(function(){
-                    $$('.inputlinecon2').addClass('inputlineconup');
-                },10)
-
-                setTimeout(function(){
-                    $$('.inputlinecon3').addClass('inputlineconup');
-                },100)
             }else{
                 if ($$('.row22').hasClass('rowone')) {//如果选择上海之前，隐藏项是展开状态
-                    //如果选择全额之前，装修和利息是展开状态
-                    $$('.row22').removeClass('inputlinehide');
-                    $$('.row22').addClass('inputlineshow');
-                    $$('.inputlinecon2').removeClass('inputlineconup');
-                    $$('.inputlinecon3').removeClass('inputlineconup');
-
-                    setTimeout(function(){
-                        $$('.row22').removeClass('inputlineshow');
-                        $$('.row22').addClass('inputlinehide');
-                    },10);
+                    $$('.row22').removeClass('inputlineshow');
+                    $$('.row22').addClass('inputlinehide');
 
                     $$('.row22').removeClass('rowone');
                 }else{
@@ -327,10 +270,6 @@ function con($scope, calculator, buyCalculation, $http, indeedTax, businessTax, 
                 if ($$('.buyDeedTax').hasClass('rowone')) {
                     $$('.buyDeedTax').removeClass('inputlinehide');
                     $$('.buyDeedTax').addClass('inputlineshow');
-                    setTimeout(function(){
-                        $$('.inputlinecon4').addClass('inputlineconup');
-                        $$('.buyDeedTax').removeClass('rowone');
-                    },100)
                     $scope.fee.buyDeedTax = 0.00;                  
                 }else{
                    
@@ -339,7 +278,6 @@ function con($scope, calculator, buyCalculation, $http, indeedTax, businessTax, 
             }else if ($scope.filter2.isDeedTax) {
                 $$('.buyDeedTax').addClass('rowone');
 
-                $$('.inputlinecon4').removeClass('inputlineconup');
                 $$('.buyDeedTax').removeClass('inputlineshow');
 
                 setTimeout(function(){
@@ -407,15 +345,15 @@ function con($scope, calculator, buyCalculation, $http, indeedTax, businessTax, 
 
                 //如果选择上海之前，国籍展开状态，执行隐藏动画
                 if ($$('.row1').hasClass('rowone')) {
-                    $$('.row1').removeClass('inputlinehide');
-                    $$('.row1').addClass('inputlineshow');
-                    $$('.inputlinecon1').removeClass('inputlineconup');
+                    // $$('.row1').removeClass('inputlinehide');
+                    // $$('.row1').addClass('inputlineshow');
+                    // $$('.inputlinecon1').removeClass('inputlineconup');
 
                     //延迟执行行消失效果
-                    setTimeout(function(){
+                    // setTimeout(function(){
                         $$('.row1').removeClass('inputlineshow');
                         $$('.row1').addClass('inputlinehide');//取消行隐藏
-                    },10);
+                    // },10);
                     
                     $$('.row1').removeClass('rowone');//移除rowone标记
                 }else{
@@ -438,16 +376,16 @@ function con($scope, calculator, buyCalculation, $http, indeedTax, businessTax, 
 
                 //如果已有面积之前，隐藏项是展开状态,则隐藏
                 if ($$('.row2').hasClass('rowone')) {
-                    $$('.row2').removeClass('inputlinehide');
-                    $$('.row2').addClass('inputlineshow');
-                    $$('.inputlinecon2').removeClass('inputlineconup');
-                    $$('.inputlinecon3').removeClass('inputlineconup');
+                    // $$('.row2').removeClass('inputlinehide');
+                    // $$('.row2').addClass('inputlineshow');
+                    // $$('.inputlinecon2').removeClass('inputlineconup');
+                    // $$('.inputlinecon3').removeClass('inputlineconup');
 
                     //延迟执行行消失效果
-                    setTimeout(function(){
+                    // setTimeout(function(){
                         $$('.row2').removeClass('inputlineshow');
                         $$('.row2').addClass('inputlinehide');
-                    },10);
+                    // },10);
 
                     $scope.filter1.existArea = 0.00;
                     $scope.filter1.familyNum = 0;
@@ -458,21 +396,21 @@ function con($scope, calculator, buyCalculation, $http, indeedTax, businessTax, 
                 }
             }else{
                 //显示已有面积和家庭人口部分
-                setTimeout(function(){
+                // setTimeout(function(){
                     $$('.row2').removeClass('inputlinehide');//取消行隐藏
                     $$('.row2').addClass('inputlineshow');//行显示
 
                     $$('.row2').addClass('rowone');
 
                     //家庭人口行内容，延迟0.1s
-                    setTimeout(function(){
-                        $$('.inputlinecon2').addClass('inputlineconup');
-                    },10)
+                    // setTimeout(function(){
+                    //     $$('.inputlinecon2').addClass('inputlineconup');
+                    // },10)
 
-                    setTimeout(function(){
-                        $$('.inputlinecon3').addClass('inputlineconup');
-                    },100)                    
-                },300)
+                    // setTimeout(function(){
+                    //     $$('.inputlinecon3').addClass('inputlineconup');
+                    // },100)                    
+                // },300)
 
                 // $scope.filter1.existArea = 0.00;
                 $scope.filter1.familyNum = 3;
@@ -517,9 +455,6 @@ function con($scope, calculator, buyCalculation, $http, indeedTax, businessTax, 
         $$(".buyresult").removeClass("conhide");
         $$(".buyresult").addClass("conshow");
 
-        // $$(".mainbuy").removeClass("conshow");
-        // $$(".mainbuy").removeClass("conshow2");
-        // $$(".mainbuy").addClass("conshow1");
     }
 
     $scope.showSellResult = function() {
@@ -594,8 +529,6 @@ function con($scope, calculator, buyCalculation, $http, indeedTax, businessTax, 
         $$(".sellresult").removeClass("conhide");
         $$(".sellresult").addClass("conshow");
 
-        // $$(".mainsell").removeClass("conshow");
-        // $$(".mainsell").addClass("conshow1");
     }
 
     // help部分内容

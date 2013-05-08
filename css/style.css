@@ -52,12 +52,6 @@
     .conshow{
         -webkit-transform: translateX(-320px);
     }
-/*    .conshow1{
-        -webkit-transform: translateX(-320px) scale(0.95,0.95);
-    }
-    .conshow2{
-        -webkit-transform: translateX(-320px) scale(1,1);
-    }*/
     .inputline,.first .firstnav .inputline,.inputline,.inputlinecon,.getprice,.contract,.changetype{
         width: 298px;
     }
@@ -196,22 +190,22 @@
     }
     .calcbuy,.calcsell,.resultcon,.helpcon,.firstcon{
         width: 400px;
-        height: 615px;
+        height: 568px;
    }
    .buyForm,.firstm{
         width: 400px;
-        min-height: 555px; 
+        min-height: 556px; 
         padding-top:  12px;  
    }
    .sellForm{
         width:400px;
-        min-height: 597px;
+        min-height: 556px;
    }
    .errortip{
         top: 180px;
    }
    .resultm,.helpm{
-        min-height: 597px;
+        min-height: 615px;
         background: none;
     }
    .buyresult,.sellresult{
@@ -470,7 +464,6 @@
     position: absolute;
     top: 0;
     left: 0;
-/*    background: #000;*/
 }
 .mainbuy,.mainsell,.mainhelp,.buyresult,.sellresult{
     background: #354b62;
@@ -802,6 +795,7 @@ p.helpans{
     position: relative;
     overflow: hidden;
     margin: 0px 10px;
+    background: #fff;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     box-shadow: 0px -1px 2px #2b3d50,0px 2px 4px #2b3d50;
@@ -811,7 +805,7 @@ p.helpans{
     position: absolute;
     z-index: 19;
     left: 0;
-    bottom: 0px;
+    bottom: -1px;
     width: 100%;
     height: 8px;
     background-size: 100%;
@@ -883,15 +877,15 @@ p.helpans{
     height: 0;
 }
 .inputlinehide{
-    display: block;
-    height: 0;
-    -webkit-transition:height 0.2s ease-out 0.2s;
+    display: none;
+/*    height: 0;
+    -webkit-transition:height 0.2s ease-out 0.2s;*/
 }
 .inputlineshow{
     display: block;
     height: 45px;
     overflow: hidden;
-    -webkit-transition:height 0.2s ease-in;
+/*    -webkit-transition:height 0.2s ease-in;*/
 }
 .inputlinecontop{
     position: absolute;
@@ -1000,9 +994,9 @@ select{
     position: absolute;
     left: 0;
     top: 0px;
-    -webkit-transform: translateX(0px);
+/*    -webkit-transform: translateX(0px);
     -webkit-transition-duration: 0.1s;
-    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;*/
     border-radius:3px; 
     height: 28px;
     width: 68px;
@@ -1035,19 +1029,20 @@ select{
     color: #036da6;    
 }
 .tabchoose-checkbox:checked + .tabchoose-label .tabbk {
-    -webkit-transform: translateX(70px);
+    left: 70px;
+/*    -webkit-transform: translateX(70px);
     -webkit-transition-duration: 0.1s;
-    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;*/
 }
 
 .tabchoose-checkbox:checked + .tabchoose-label .tabl{
     color: #a6b7c9;
-    -webkit-transition:color 0.1s ease-out 0.1s;
+/*    -webkit-transition:color 0.1s ease-out 0.1s;*/
 }
 
 .tabchoose-checkbox:checked + .tabchoose-label .tabr {
     color: #036da6;
-    -webkit-transition:color 0.1s ease-out 0.1s;
+/*    -webkit-transition:color 0.1s ease-out 0.1s;*/
 }
 
 .tabchooseone{
@@ -1080,9 +1075,9 @@ select{
     position: absolute;
     left: 0;
     top: 0px;
-    -webkit-transform: translateX(0px);
+/*    -webkit-transform: translateX(0px);
     -webkit-transition-duration: 0.1s;
-    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;*/
 }
 .tabbkone{
     border-radius:4px; 
@@ -1114,18 +1109,19 @@ select{
 }
 .tabchoose-checkbox:checked + .tabchooseone-label .tabbkone {
 /*        -webkit-transform: translateX(168px);*/
-    -webkit-transition-duration: 0.1s;
-    -webkit-transition-timing-function: ease-out;
+/*    -webkit-transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease-out;*/
+    left: 0px;
 }
 
 .tabchoose-checkbox:checked + .tabchooseone-label .tablone {
     color: #a6b7c9;
-    -webkit-transition:color 0.1s ease-out 0.1s;
+/*    -webkit-transition:color 0.1s ease-out 0.1s;*/
 }
 
 .tabchoose-checkbox:checked + .tabchooseone-label .tabrone{
     color: #fff;
-    -webkit-transition:color 0.1s ease-out 0.1s;    
+/*    -webkit-transition:color 0.1s ease-out 0.1s;    */
 }
 
 .calctype{

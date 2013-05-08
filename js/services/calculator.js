@@ -1,9 +1,9 @@
 'use strict';
-jsq.service("calculator", function($rootScope) {
-    var self = this;
-
+// jsq.service("calculator", function($rootScope) {
+//     var self = this;
+    function calculator(){};
     // 计算公证费
-    self.notaryFeeCal = function(contractPrice) {
+    calculator.notaryFeeCal = function(contractPrice) {
         var notaryFee = 0;
         if (contractPrice <= 50) {
             if (contractPrice * 0.003 < 0.02) {
@@ -26,12 +26,12 @@ jsq.service("calculator", function($rootScope) {
     }
 
     // 计算交易手续费
-    self.tradingFeeCal = function(area) {
+    calculator.tradingFeeCal = function(area) {
         return area * 0.00025;
     }
 
     // 计算佣金
-    self.commissionFeeCal = function() {
+    calculator.commissionFeeCal = function() {
         return 0.01;
     }
-});
+// });

@@ -1,9 +1,9 @@
 'use strict';
-jsq.service("sellCalculation", function($rootScope, calculator) {
-    var self = this;
-
+// jsq.service("sellCalculation", function($rootScope, calculator) {
+//     var self = this;
+    function sellCalculation(){};
     // 个税
-    self.indeedTaxCal = function(contractPrice, primeCost, it) {
+    sellCalculation.indeedTaxCal = function(contractPrice, primeCost, it) {
         if (contractPrice < primeCost) {
             return 0;
         }
@@ -11,7 +11,7 @@ jsq.service("sellCalculation", function($rootScope, calculator) {
     }
 
     // 营业税
-    self.businessTaxCal = function(contractPrice, purchasePrice, bt) {
+    sellCalculation.businessTaxCal = function(contractPrice, purchasePrice, bt) {
         var tax = 0;
         if (bt.totalProportion) {
             tax = contractPrice * bt.totalProportion;
@@ -22,7 +22,7 @@ jsq.service("sellCalculation", function($rootScope, calculator) {
     }
 
     // 到手价计算合同价
-    self.contractPriceCal = function(native, bt, it, fee, tradingFee, lastPrice) {
+    sellCalculation.contractPriceCal = function(native, bt, it, fee, tradingFee, lastPrice) {
         var contractPrice = 0;
         var primeCost = fee.purchasePrice + fee.interest + fee.decorationCost + fee.buyDeedTax;
         // temp1 1-个税全额比例-个税利润比例-佣金比例-营业税全额比例-营业税差额比例+营业税全额比例*利润比例+差额比例*利润比例
@@ -83,4 +83,5 @@ jsq.service("sellCalculation", function($rootScope, calculator) {
         }
         return (lastPrice - temp2 + notaryTaxNum) / (temp1 - notaryTaxProportion);
     }
-});
+
+// });

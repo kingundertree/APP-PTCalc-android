@@ -1,9 +1,13 @@
 'use strict';
-jsq.service("businessTax", function($rootScope) {
-    var self = this;
+// jsq.service("businessTax", function($rootScope) {
+
+// function businessTax($rootScope){
+//     var self = this;
+    // businessTax();
+    function businessTax(){};
 
     // 营业税免征
-    self.noBusinessTaxCal = function(filter) {
+    businessTax.noBusinessTaxCal = function(filter) {
         // 普通住宅 + 五年以外
         if (!filter.houseType && !filter.buyTime) {
             return true;
@@ -12,7 +16,7 @@ jsq.service("businessTax", function($rootScope) {
     }
 
     // 营业税按照全额计算
-    self.byTotalCal = function(filter) {
+    businessTax.byTotalCal = function(filter) {
         // 普通住宅，且五年内，则营业税为全额的5.65%
         if (!filter.houseType && filter.buyTime) {
             return 0.0565;
@@ -29,11 +33,12 @@ jsq.service("businessTax", function($rootScope) {
     }
 
     // 营业税按照利润计算
-    self.byDiffCal = function(filter) {
+    businessTax.byDiffCal = function(filter) {
         // 非普通住宅 + 五年外 + 提供发票， 差额的5.65%
         if (filter.houseType && !filter.buyTime && !filter.hasInvoice) {
             return 0.0565;
         };
         return 0;
     }
-});
+// }
+// });

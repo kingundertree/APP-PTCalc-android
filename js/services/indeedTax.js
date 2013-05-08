@@ -1,9 +1,9 @@
 'use strict';
-jsq.service("indeedTax", function($rootScope) {
-    var self = this;
-
+// jsq.service("indeedTax", function($rootScope) {
+//     var self = this;
+    function indeedTax(){};
     // 个税免征
-    self.noIndeedTaxCal = function(filter) {
+    indeedTax.noIndeedTaxCal = function(filter) {
         // 承诺唯一 + 五年以外
         if (!filter.isOnly && !filter.buyTime) {
             return true;
@@ -12,7 +12,7 @@ jsq.service("indeedTax", function($rootScope) {
     }
 
     // 个税按照全额计算 -- 全额计算系数
-    self.byTotalCal = function(filter) {
+    indeedTax.byTotalCal = function(filter) {
         if (!filter.houseType && filter.hasInvoice) {
             return 0.01;
         }
@@ -32,7 +32,7 @@ jsq.service("indeedTax", function($rootScope) {
     }
 
     // 个税按照利润计算 -- 利润系数为20%
-    self.byProfitCal = function(filter) {
+    indeedTax.byProfitCal = function(filter) {
         // 普通住宅 + 提供发票
         if (!filter.houseType && !filter.hasInvoice) {
             return 0.2;
@@ -47,4 +47,4 @@ jsq.service("indeedTax", function($rootScope) {
         }
         return 0;
     }
-});
+// });
